@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #10b981;
+  --color-brand-secondary: #059669;
+  --color-brand-accent: #f59e0b;
+  --color-surface-base: #f0fdf4;
+  --color-bdt-green: #006a4e; /* Bangladesh National Green */
+  --color-bdt-red: #f42a41;   /* Bangladesh National Red */
+}
+
+@layer base {
+  body {
+    @apply bg-[#fdfaf5] text-slate-800 selection:bg-emerald-200;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

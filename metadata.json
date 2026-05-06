@@ -1,0 +1,11 @@
+{
+  "name": "AgroConnect-Marketplace",
+  "description": "A comprehensive agricultural marketplace connecting farmers, buyers, and transporters with secure role-based access.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "Role-based Access Control",
+    "Real-time Inventory",
+    "Order Management",
+    "Secure Payments Simulation"
+  ]
+}
