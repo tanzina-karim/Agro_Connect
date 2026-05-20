@@ -1,6 +1,0 @@
-{
-  "name": "AgroConnect",
-  "description": "A premium smart agriculture marketplace connecting farmers directly to buyers with AI-powered plant disease detection and smart farming assistance.",
-  "requestFramePermissions": ["camera", "geolocation"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
