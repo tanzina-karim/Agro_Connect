@@ -1,4 +1,4 @@
-# 🌾 Agri-Bangla Platform
+# 🌾 Agri-ConnectPlatform
 
 An intelligent, full-stack, bilingual (Bangla + English) agricultural marketplace that connects **farmers, buyers, transporters, and admins** under a secure and automated ecosystem with AI-powered crop disease detection.
 
