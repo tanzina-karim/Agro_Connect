@@ -1,59 +1,65 @@
+# 🌾 Agri-Bangla Platform
 
-
-
-
-# Agro Connect (Agri-Bangla) 🌾
-**A Modern Bilingual Full-Stack Agriculture Marketplace & Logistics Platform**
-
-Agro Connect is an innovative AgriTech platform designed to transform the traditional agricultural supply chain in Bangladesh. By eliminating middle-men, the platform creates a secure, automated network connecting four key stakeholders: **Farmers, Buyers, Couriers/Transporters, and Administrators**. 
-
-Built with a role-based architecture, the platform features a real-time marketplace, an escrow-style payment workflow, a dynamic logistics pricing engine, and cutting-edge AI-powered crop disease diagnostics.
+An intelligent, full-stack, bilingual (Bangla + English) agricultural marketplace that connects **farmers, buyers, transporters, and admins** under a secure and automated ecosystem with AI-powered crop disease detection.
 
 ---
 
-## 👥 Core Stakeholder Hubs & Features
+## 🚀 Project Overview
 
-### 1. Buyer Portal & Marketplace
-* **Dynamic Search & Localized Filters:** Browse fresh produce by categories (Vegetables, Fruits, Grains, Dairy, Honey) with instant full-text search.
-* **Weight-Based Dynamic Cart:** Interactive volume slider to adjust quantities; price and real-time logistics fees update dynamically based on weight and distance.
-* **Real-Time Order Tracking:** A visual 5-stage lifecycle pipeline (*Order Placed → Approved → Paid → In Transit → Delivered*).
-* **Simulated MFS Gateway:** In-dashboard bKash and Nagad payment simulator featuring OTP emulation and 2-step PIN verification.
+Agri-Bangla is a smart agriculture platform designed to modernize the agricultural supply chain in Bangladesh. It enables direct interaction between farmers and buyers while ensuring:
 
-### 2. Farmer Dashboard & Portal
-* **Product Listing Engine:** Upload produce with descriptions, localized pricing per unit, weight availability, images, and live stock tracking.
-* **Order Lifecycle Control:** Accept or reject buyer requests before any monetary transaction takes place to avoid stock discrepancies.
-* **Fulfillment Dispatch:** Release orders to the internal transport pool or input tracking metrics for external couriers.
-
-### 3. Courier & Transporter Portal
-* **Logistics Job Board:** Available transport jobs appear instantly based on vehicle capacity matching (Bike, Van, Pickup).
-* **Lifecycle Tracking:** Transporters progress orders through clear stages (*Collect Crops → Start Transit → Deliver Crops*) to automatically settle Cash on Delivery (COD) payouts.
-
-### 4. 🧠 AI Crop Disease Detection Center
-* Powered by the **Google Gemini 2.0 Flash** vision API.
-* Allows farmers and buyers to snap or upload a photo of an infected plant leaf.
-* Generates an instantaneous bilingual report detailing **Disease Name, Symptoms, Severity, and a localized Treatment Plan** tailored to the Bangladeshi climate.
-
-### 5. Administrator Control Hub
-* **Platform Analytics:** Real-time metrics for total users, active listings, gross revenue metrics, and order completion rates.
-* **Revenue Control:** Dynamically adjust platform commission rates across the ecosystem instantly.
+- Secure deferred payment system (escrow-like flow)
+- Real-time logistics tracking
+- AI-based crop disease detection
+- Transparent order lifecycle
+- Admin-controlled platform governance
 
 ---
 
-## 🛠️ Project Structure
+## 🏗️ System Architecture
 
-Based on the development environment, the source code is modularized as follows:
+The system follows a modular full-stack architecture:
 
-```text
-src/
-├── components/       # Reusable UI Components (Navbar, Sidebar, Footer, Cards)
-├── context/          # State Management & Global Providers (AuthContext.tsx, LanguageContext)
-├── data/             # Mock Data, Categories, and Localized Content Strings
-├── db/               # Firebase Database Configuration (db.ts)
-├── hooks/            # Custom React Hooks for data fetching and authentication
-├── pages/            # View Layouts (Marketplace, FarmerDashboard, CourierPortal, AdminHub, AIDetection)
-├── types/            # TypeScript Interface & Type Definitions
-├── App.tsx           # Application Core Router & Layout Wrapper
-└── main.tsx          # Application Mounting Point
+- **Frontend:** React (TypeScript)
+- **Backend:** Firebase (Firestore + Authentication)
+- **AI Service:** Gemini-based image analysis engine
+- **Payment System:** bKash/Nagad simulation with OTP verification
+- **Storage:** Cloud Firestore Database
+
+---
+
+## 👥 User Roles
+
+### 🧑‍🌾 Farmer
+- Add and manage products
+- Accept or reject orders
+- Control stock and pricing
+- Assign shipments (courier or internal fleet)
+
+### 🛍️ Buyer
+- Browse agricultural products
+- Place orders with weight-based cart
+- Track real-time order status
+- Make secure payments
+- Submit reviews and ratings
+
+### 🚚 Transporter
+- Accept delivery jobs
+- Collect goods from farmers
+- Update delivery status (Collected → Shipped → Delivered)
+
+### 👑 Admin
+- Manage users and roles
+- Control commission rates
+- Monitor platform analytics
+- Moderate products and orders
+
+---
+
+## 🔄 Core Workflow
+
+### 🧾 Order Lifecycle
+
 
 
 
